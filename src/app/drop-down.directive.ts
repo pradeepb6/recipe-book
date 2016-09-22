@@ -8,8 +8,8 @@ export class DropDownDirective {
         return this.isOpen;
     }
 
-    @HostListener('click') open() {
-        this.isOpen = true;
+    @HostListener('click') toggle() {
+        this.isOpen = !this.isOpen;
     }
 
     @HostListener('mouseleave') close() {
