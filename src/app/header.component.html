@@ -8,17 +8,17 @@
         <!--<span class="icon-bar"></span>-->
         <!--<span class="icon-bar"></span>-->
       <!--</button>-->
-      <a class="navbar-brand" href="#">Recipe Book</a>
+      <a class="navbar-brand" [routerLink]="['/']">Recipe Book</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Shopping list</a></li>
+        <li><a [routerLink]="['/recipes']" routerLinkActive="active">Recipes</a></li>
+        <li><a [routerLink]="['/shopping-list']" routerLinkActive="active">Shopping list</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"rbdropDown>
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Login</a></li>
